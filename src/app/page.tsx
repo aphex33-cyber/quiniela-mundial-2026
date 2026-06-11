@@ -1,5 +1,3 @@
-export const runtime = 'edge';
-
 import { getLeaderboard, getPlayers } from '@/infrastructure/supabase/players';
 
 

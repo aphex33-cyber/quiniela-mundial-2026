@@ -1,5 +1,3 @@
-export const runtime = 'edge';
-
 import { getPlayers } from '@/infrastructure/supabase/players';
 
 import { getPlayerMatchPoints } from '@/infrastructure/supabase/players';
