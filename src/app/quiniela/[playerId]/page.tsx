@@ -1,6 +1,5 @@
-export const runtime = 'edge';
-
 import { getPlayers } from '@/infrastructure/supabase/players';
+
 import { getPlayerMatchPoints } from '@/infrastructure/supabase/players';
 import { PHASE_LABELS } from '@/domain/scoring';
 import { notFound } from 'next/navigation';
