@@ -1,4 +1,7 @@
+export const runtime = 'edge';
+
 import { getLeaderboard, getPlayers } from '@/infrastructure/supabase/players';
+
 import { getUpcomingMatches, getRecentResults } from '@/infrastructure/supabase/matches';
 import { PHASE_LABELS } from '@/domain/scoring';
 import Link from 'next/link';
