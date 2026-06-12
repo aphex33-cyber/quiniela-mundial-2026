@@ -191,7 +191,7 @@ export default function ResultadosAdminPage() {
                       </span>
                       <button className="btn btn-secondary btn-sm" onClick={() => {
                         setScores(p => ({ ...p, [m.id]: { home: String(m.real_home), away: String(m.real_away) } }));
-                        // Switch to open state for correction
+                        setMatches(prev => prev.map(match => match.id === m.id ? { ...match, status: 'OPEN' } : match));
                       }}>Corregir</button>
                     </div>
                   )}

@@ -698,7 +698,9 @@ img { max-width: 100%; }
 @media (max-width: 768px) {
   .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
   .bracket-matches.cols-2, .bracket-matches.cols-4 { grid-template-columns: 1fr; }
-  .navbar-links { display: none; }
+  .navbar-inner { flex-direction: column; height: auto; padding: 12px 1rem; gap: 10px; }
+  .navbar-links { width: 100%; overflow-x: auto; justify-content: flex-start; padding-bottom: 4px; -webkit-overflow-scrolling: touch; }
+  .nav-link { white-space: nowrap; }
   .hero-title { font-size: 1.75rem; }
   .page { padding: 1.5rem 1rem 3rem; }
   .leaderboard-row { grid-template-columns: 28px 1fr auto; }
