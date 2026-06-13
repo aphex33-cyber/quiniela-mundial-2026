@@ -42,3 +42,13 @@ next-env.d.ts
 
 # temp scripts
 create_repo.ps1
+
+# OpenNext
+.open-next
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+
+!.env.example
