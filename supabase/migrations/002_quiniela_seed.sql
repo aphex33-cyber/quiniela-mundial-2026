@@ -188,24 +188,24 @@ INSERT INTO public.quiniela_matches (match_number, phase, status, match_date, ve
 (96,  'R32','LOCKED','2026-07-01 17:00:00-05','Arrowhead, KC',       '1° Grupo H','2° Grupo G'),
 (97,  'R32','LOCKED','2026-07-02 13:00:00-05','SoFi, LA',            '1° Grupo I','3er Mejor-4'),
 (98,  'R32','LOCKED','2026-07-02 17:00:00-05','Levi''s, SF',         '1° Grupo J','2° Grupo I'),
-(99,  'R32','LOCKED','2026-07-03 13:00:00-05','Lumen, SEA',          '1° Grupo K','3er Mejor-5'),
-(100, 'R32','LOCKED','2026-07-03 17:00:00-05','Lincoln, PHI',        '1° Grupo L','2° Grupo K'),
-(101, 'R32','LOCKED','2026-07-03 13:00:00-05','Gillette, BOS',       '2° Grupo D','3er Mejor-6'),
-(102, 'R32','LOCKED','2026-07-03 17:00:00-05','Mercedes, ATL',       '2° Grupo F','3er Mejor-7'),
-(103, 'R32','LOCKED','2026-07-04 13:00:00-05','MetLife, NJ',         '2° Grupo H','3er Mejor-8'),
-(104, 'R32','LOCKED','2026-07-04 17:00:00-05','Rose Bowl, LA',       '2° Grupo J','2° Grupo L')
+(99,  'R32','LOCKED','2026-07-02 13:00:00-05','Lumen, SEA',          '1° Grupo K','3er Mejor-5'),
+(100, 'R32','LOCKED','2026-07-02 17:00:00-05','Lincoln, PHI',        '1° Grupo L','2° Grupo K'),
+(101, 'R32','LOCKED','2026-07-02 20:00:00-05','Gillette, BOS',       '2° Grupo D','3er Mejor-6'),
+(102, 'R32','LOCKED','2026-07-03 13:00:00-05','Mercedes, ATL',       '2° Grupo F','3er Mejor-7'),
+(103, 'R32','LOCKED','2026-07-03 17:00:00-05','MetLife, NJ',         '2° Grupo H','3er Mejor-8'),
+(104, 'R32','LOCKED','2026-07-03 20:00:00-05','Rose Bowl, LA',       '2° Grupo J','2° Grupo L')
 ON CONFLICT (match_number) DO NOTHING;
 
 -- R16 (8 partidos)
 INSERT INTO public.quiniela_matches (match_number, phase, status, match_date, slot_home_desc, slot_away_desc) VALUES
-(105, 'R16','LOCKED','2026-07-05 13:00:00-05','Ganador M89','Ganador M90'),
-(106, 'R16','LOCKED','2026-07-05 17:00:00-05','Ganador M91','Ganador M92'),
-(107, 'R16','LOCKED','2026-07-06 13:00:00-05','Ganador M93','Ganador M94'),
-(108, 'R16','LOCKED','2026-07-06 17:00:00-05','Ganador M95','Ganador M96'),
-(109, 'R16','LOCKED','2026-07-07 13:00:00-05','Ganador M97','Ganador M98'),
-(110, 'R16','LOCKED','2026-07-07 17:00:00-05','Ganador M99','Ganador M100'),
-(111, 'R16','LOCKED','2026-07-08 13:00:00-05','Ganador M101','Ganador M102'),
-(112, 'R16','LOCKED','2026-07-08 17:00:00-05','Ganador M103','Ganador M104')
+(105, 'R16','LOCKED','2026-07-04 13:00:00-05','Ganador M89','Ganador M90'),
+(106, 'R16','LOCKED','2026-07-04 17:00:00-05','Ganador M91','Ganador M92'),
+(107, 'R16','LOCKED','2026-07-05 13:00:00-05','Ganador M93','Ganador M94'),
+(108, 'R16','LOCKED','2026-07-05 17:00:00-05','Ganador M95','Ganador M96'),
+(109, 'R16','LOCKED','2026-07-06 13:00:00-05','Ganador M97','Ganador M98'),
+(110, 'R16','LOCKED','2026-07-06 17:00:00-05','Ganador M99','Ganador M100'),
+(111, 'R16','LOCKED','2026-07-07 13:00:00-05','Ganador M101','Ganador M102'),
+(112, 'R16','LOCKED','2026-07-07 17:00:00-05','Ganador M103','Ganador M104')
 ON CONFLICT (match_number) DO NOTHING;
 
 -- Cuartos de Final (4 partidos)
@@ -224,7 +224,7 @@ ON CONFLICT (match_number) DO NOTHING;
 
 -- Tercer Lugar
 INSERT INTO public.quiniela_matches (match_number, phase, status, match_date, venue, slot_home_desc, slot_away_desc) VALUES
-(119, 'TPP','LOCKED','2026-07-17 16:00:00-05','Hard Rock, Miami','Perdedor M117','Perdedor M118')
+(119, 'TPP','LOCKED','2026-07-18 16:00:00-05','Hard Rock, Miami','Perdedor M117','Perdedor M118')
 ON CONFLICT (match_number) DO NOTHING;
 
 -- Final
