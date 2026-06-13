@@ -6,7 +6,7 @@ import { notFound } from 'next/navigation';
 
 function formatDate(d: string | null) {
   if (!d) return '';
-  return new Date(d).toLocaleDateString('es-MX', { day: 'numeric', month: 'short' });
+  return new Date(d).toLocaleDateString('es-HN', { timeZone: 'America/Tegucigalpa', day: 'numeric', month: 'short' });
 }
 
 function PointsBadge({ points }: { points: number | null }) {

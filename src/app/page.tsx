@@ -8,7 +8,7 @@ import Link from 'next/link';
 function formatDate(dateStr: string | null) {
   if (!dateStr) return '';
   const d = new Date(dateStr);
-  return d.toLocaleDateString('es-MX', { weekday: 'short', day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' });
+  return d.toLocaleDateString('es-HN', { timeZone: 'America/Tegucigalpa', weekday: 'short', day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' });
 }
 
 function PhaseBadge({ phase }: { phase: string }) {

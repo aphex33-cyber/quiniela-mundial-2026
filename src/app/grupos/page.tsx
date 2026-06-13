@@ -7,7 +7,7 @@ const GROUPS = ['A','B','C','D','E','F','G','H','I','J','K','L'];
 
 function formatDate(dateStr: string | null) {
   if (!dateStr) return '';
-  return new Date(dateStr).toLocaleDateString('es-MX', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' });
+  return new Date(dateStr).toLocaleDateString('es-HN', { timeZone: 'America/Tegucigalpa', day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' });
 }
 
 function StandingsTable({ standings }: { standings: GroupStanding[] }) {
